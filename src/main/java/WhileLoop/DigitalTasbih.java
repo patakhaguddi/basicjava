@@ -4,15 +4,16 @@ import java.util.Scanner;
 public class DigitalTasbih {
     public static void main(String[] args) {
         int sum=0;
-        char ch;
+//        char ch;
         Scanner sc = new Scanner(System.in);
+        char ch=sc.next().charAt(0);
         System.out.print("Please enter");
         do{
-            sum+=sc.nextInt();
+            int num=sc.nextInt();
+            sum+=num;
             System.out.println(sum);
-            System.out.println("Continue?");
-            ch=input.next().charAt(0);
+
         }
-        while(ch!='q');
+        while(ch!=0);
     }
 }
