@@ -1,11 +1,4 @@
 package WhileLoop;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-
-
-import java.io.File;
-
-import java.io.IOException;
 
 public class ExtractHTML {
 
