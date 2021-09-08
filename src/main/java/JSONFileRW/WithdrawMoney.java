@@ -45,7 +45,7 @@ public class WithdrawMoney {
                             System.out.println("Choose 1 for Check Balance");
                             System.out.println("Choose 2 for Withdraw Money");
 
-                            int option = s.nextInt();
+                            int option = s.nextInt('1');
 
                             if (amount % 500 != 0) {
                                 System.out.println("Please input amount that is multiply by 500");
@@ -55,7 +55,10 @@ public class WithdrawMoney {
                                 System.out.println("Not enough balance");
                             }
                             int deductedBalance = balance - amount;
+                            int option2 = s.nextInt('1');
                             System.out.println(deductedBalance);
+
+
                     }
 
 
