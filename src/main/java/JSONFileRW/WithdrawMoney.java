@@ -74,13 +74,13 @@ public class WithdrawMoney {
 //                    throw new IllegalStateException("Unexpected value: " + n);
             }
 
-        public static void updateJSON;(int name, int balance){
+        public static void updateJSON{
             String fileName="User.json";
             JSONParser jsonParser = new JSONParser();
             Object obj = jsonParser.parse(new FileReader(fileName));
             JSONObject empObj = (JSONObject) obj;
             System.out.println(empObj);
-            empObj.put(name, balance);
+            final Object put = empObj.put("name", "balance");
             FileWriter file = new FileWriter(fileName);
             file.write(empObj.toJSONString());
             file.flush();
